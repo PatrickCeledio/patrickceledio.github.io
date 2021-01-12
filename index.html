@@ -1,167 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PJC Portfolio Website</title>
-        <link 
-            rel="stylesheet" 
-            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
-            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
-            crossorigin="anonymous"/>
-        <link 
-            rel="stylesheet" 
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
-            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
-            crossorigin="anonymous"/>
-        <link 
-            rel="preconnect" 
-            href="https://fonts.gstatic.com">
-        <link 
-            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" 
-            rel="stylesheet">
-        <link 
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Mono:wght@500&display=swap" 
-            rel="stylesheet">
-        <link 
-            rel="stylesheet" 
-            href="./public/css/main.css">
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img src="add new logo" alt="" class="index-logo">
-            </div>
-    
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <!-- Introduction: class for styling, id for anchoring -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Patrick Celedio</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">Programmer and Developer</p>
-            <img src="./img/patrick2.jpg" alt="picture of myself" class="intro__img">
-        </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PJC Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Mono:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/main.css">
+</head>
 
-        <!-- My Services -->
-        <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">What I do</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Development and Design</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        In mollis tortor ac mi tincidunt, in rutrum felis facilisis. 
-                        Praesent non augue sed est congue elementum eget vel leo. 
-                        In luctus faucibus eleifend. Aliquam auctor neque ac tempor pulvinar. 
-                        Morbi eleifend eu nulla tincidunt dictum.</p>
-                </div> <!-- / service -->
-                
-                <div class="service">
-                    <h3>Video Game Development</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        In mollis tortor ac mi tincidunt, in rutrum felis facilisis. 
-                        Praesent non augue sed est congue elementum eget vel leo. 
-                        In luctus faucibus eleifend. Aliquam auctor neque ac tempor pulvinar. 
-                        Morbi eleifend eu nulla tincidunt dictum.</p>
-                </div> <!-- / service -->
-               
-                <div class="service">
-                    <h3>IT Support</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        In mollis tortor ac mi tincidunt, in rutrum felis facilisis. 
-                        Praesent non augue sed est congue elementum eget vel leo. 
-                        In luctus faucibus eleifend. Aliquam auctor neque ac tempor pulvinar. 
-                        Morbi eleifend eu nulla tincidunt dictum.</p>
-                </div> <!-- / service -->
-            </div> <!-- / services -->
-            <a href="#work" class="btn">My Work</a>
-        </section>
+<body>
+    <header>
+        <div class="logo">
+            <img src="add new logo" alt="" class="index-logo">
+        </div>
 
-        <!-- About Me -->
-        <section class="about-me" id="about">
-            <h2 class="section__title section__title--about">Who I am</h2>
-            <p class="section__subtitle section__subtitle--about">Computer Science student and web developer based out of SF</p>
-            
-            <div class="about_me__body">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    In mollis tortor ac mi tincidunt, in rutrum felis facilisis. 
-                    Praesent non augue sed est congue elementum eget vel leo. 
-                    In luctus faucibus eleifend. Aliquam auctor neque ac tempor pulvinar. 
-                    Morbi eleifend eu nulla tincidunt dictum.</p>
-            </div>
-
-            <img src="./img/services-bg1.png" alt="Another picture of myself" class="intro__img">
-        </section>
-
-        <!-- My Work -->
-        <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">My work</h2>
-            <p class="section__subtitle section__subtitle--work"> Personal works that I have done</p>
-
-            <div class="portfolio">
-                <!-- Portfolio items -->
-                <a href="./portfolio-item.html" class="portfolio__item">
-                    <img src="./img/portfolio1.PNG" alt="Game of the Year 2020 by Patrick Celedio" class="portfolio__img">
-                </a>
-                
-                <a href="#" class="portfolio__item">
-                    <img src="portfolio-n" alt="" class="portfolio__img">
-                </a>
-
-                <a href="#" class="portfolio__item">
-                    <img src="portfolio-n" alt="" class="portfolio__img">
-                </a>
-
-                <a href="#" class="portfolio__item">
-                    <img src="portfolio-n" alt="" class="portfolio__img">
-                </a>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <a href="my mail" class="footer-link">patrickceledio@gmail.com</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a href="https://github.com/PatrickCeledio" class="social-list__link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a href="https://twitter.com/patrickceledio" class="social-list__link">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a href="https://www.linkedin.com/in/patrickceledio" class="social-list__link">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a href="https://www.instagram.com/errorresolved/" class="social-list__link">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
             </ul>
-        </footer>
+        </nav>
+    </header>
 
-        <script src="./public/js/index.js"></script>
+    <!-- Introduction: class for styling, id for anchoring -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Patrick Celedio</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Programmer and Developer</p>
+        <img src="./img/patrick2.jpg" alt="picture of myself" class="intro__img">
+    </section>
 
-    </body>
+    <!-- My Services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Programming and Development</h3>
+                <p>
+                    Programming has been a hobby of mine ever since I was a teenager. I always enjoyed writing programs
+                    that fulfilled simple tasks
+                    such as generating coordinates in order to create random shapes on Aseprite or small applications
+                    that performed calculations and
+                    conversions. Now, I wish to work on an engineering or software development team where I am provided
+                    interesting and challenging projects
+                    that I can learn from and contribute my skills to. </p>
+            </div> <!-- / service -->
+
+            <div class="service">
+                <h3>Video Game Development</h3>
+                <p>
+                    One of my hobbies in life is gaming. Without my love for gaming, I believe I would not be as
+                    passionate in computer technology
+                    as I would be now. Recently, I have been working on a personal project on Game Maker Studio 2 and
+                    using Aseprite to create my graphics.</p>
+            </div> <!-- / service -->
+
+            <div class="service">
+                <h3>IT Support</h3>
+                <p>
+                    I am knowledgeable in desktop, laptop, and mobile troubleshooting. My first job was working at a local
+                    computer reapir shop in my neighborhood. From there, I supported hundreds of customers with their tech issues
+                    ranging from virus removal to disassembling laptops and replacing components to even reflowing the graphics processing chips on 
+                    PS3's and Xbox 360's that suffer from overheating. 
+                </p>
+            </div> <!-- / service -->
+        </div> <!-- / services -->
+        <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">Computer Science student and web developer based out of SF
+        </p>
+
+        <div class="about_me__body">
+            <p>
+                I first started my tech journey when I was 18 as I worked my way from working at a neighborhood computer
+                repair shop fixing overheating Xbox 360's and PS3's and supporting customers with computer and mobile
+                issues to working in offices in the city supporting employees to help them get back on track on their
+                workflow.
+                <br><br>
+                While I was working, I was able to graduate from Skyline College and earn my Associate in Science in
+                Network Engineering. After graduation, I chose to transfer to SFSU to pursue a Bachelor's Degree in
+                Computer Science as I want to turn my hobby of computer programming into a career.
+            </p>
+        </div>
+
+        <img src="./img/services-bg1.png" alt="Another picture of myself" class="intro__img">
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My work</h2>
+        <p class="section__subtitle section__subtitle--work"> Personal works that I have done</p>
+
+        <div class="portfolio">
+            <!-- Portfolio items -->
+            <a href="./portfolio-item.html" class="portfolio__item">
+                <img src="./img/portfolio1.PNG" alt="Game of the Year 2020 by Patrick Celedio" class="portfolio__img">
+            </a>
+
+            <a href="#" class="portfolio__item">
+                <img src="portfolio-n" alt="" class="portfolio__img">
+            </a>
+
+            <a href="#" class="portfolio__item">
+                <img src="portfolio-n" alt="" class="portfolio__img">
+            </a>
+
+            <a href="#" class="portfolio__item">
+                <img src="portfolio-n" alt="" class="portfolio__img">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© Patrick Celedio, 2021</p>
+        <a href="my mail" class="footer-link">patrickceledio@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a href="https://github.com/PatrickCeledio" class="social-list__link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://twitter.com/patrickceledio" class="social-list__link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.linkedin.com/in/patrickceledio" class="social-list__link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.instagram.com/errorresolved/" class="social-list__link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="./public/js/index.js"></script>
+    
+</body>
 </html>
