@@ -376,6 +376,22 @@ header {
         position: relative;
         z-index: 2;
     }
+
+    .imgContainer{
+        width: 50%;
+        float: left;
+    }
+}
+
+.imgContainer{
+    width: 50%;
+    float: left;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
 }
 
 /* My Work */
