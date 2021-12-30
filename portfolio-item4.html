@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I Am PJC</title>
+    <title>Moneyish</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" />
@@ -30,10 +30,10 @@
         </button>
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="./index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="./index.html" class="nav__link">My Services</a></li>
                 <li class="nav__item"><a href="./aboutme.html" class="nav__link">About Me</a></li>
-                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                <li class="nav__item"><a href="./index.html" class="nav__link">My Work</a></li>
                 <li class="nav__item"><a href="./blog/bHome.html" class="nav__link">Blog</a></li>
                 <li class="nav__item"><a href="./myresume.html" class="nav__link">My Resume</a></li>
                 <li class="nav__item"><a href="./index.html#id_footer" class="nav__link">Contact Me</a></li>
@@ -44,64 +44,43 @@
     <!-- Introduction: class for styling, id for anchoring -->
     <section class="intro" id="home">
         <h1 class="section__title section__title--intro">
-            Hi, I am <strong>Patrick J. Celedio</strong>
+            <strong>Moneyish</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro">Computer Programmer</p>
-        <img src="./img/Client.png" alt="picture of myself" class="intro__img">
+        <p class="section__subtitle section__subtitle--intro">By Patrick Celedio</p>
+        <img src="./img/portfolio1.PNG" alt="The Year 2020: The Game by Patrick Celedio" class="intro__img">
     </section>
 
-    <!-- My Services -->
-    <section class="my-services" id="services">
-        <h2 class="section__title section__title--services">What I do</h2>
-        <div class="services">
-            <div class="service">
-                <h3>Programming and Development</h3>
+    <div class="portfolio-item-individual">
+        <p>In this game, you must survive against zombies and giant coronaviruses with your trusty AK-47.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kG_U3eFZ91g" frameborder="0"
+            class="portfolio__frame"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <img src="img/portfolio1.PNG" alt="Game of the Year 2020 by Patrick Celedio" class="portfolio__thumbnail">
+        <img src="./img/gms2/start level.PNG" alt="" class="portfolio__thumbnail">
+        <img src="./img/gms2/corona1.png" alt="" class="portfolio__thumbnail">
+        <img src="./img/gms2/dead zombies.png" alt="" class="portfolio__thumbnail">
+        <img src="./img/gms2/target_closed.png" alt="" class="portfolio__thumbnail">
+        <img src="./img/gms2/target_open.png" alt="" class="portfolio__thumbnail">
+        <p>This game was made using Game Maker Studio 2. The graphics were drawn using Aseprite. The sound effects and
+            music are from ZapSplat.
+            There are ten rooms to
+            survive from
+            the zombies and coronaviruses. The goal is to safely arrive to the store to get groceries and come back home
+            in one piece!
+        </p>
+        <p> 
+            This is my first attempt at making a game using Game Maker Studio 2! I chose to create a two-dimensional platform type shooting game as I am a fan 
+            of these types of games such as Contra, Metroid, Castlevania, or Alien Hominoid. Every graphic, sound, and movement has some lines of code behind it to create the behavior.
+            What I learned from this is that the more an object exhibits complex behaviors, the more code is written behind the scenes. It made me think about big budget video
+            games in real life and how cinematic or realistic the gameplay and characters are. I have concluded that so much time and effort can be used just for the simplest in movement,
+            but complex in code.  
+        </p>
 
-            </div> <!-- / service -->
-
-            <div class="service">
-                <h3>Video Game Development</h3>
-
-            </div> <!-- / service -->
-
-            <div class="service">
-                <h3>IT Support</h3>
-
-            </div> <!-- / service -->
-        </div> <!-- / services -->
-        <a href="#work" class="btn">My Work</a>
-    </section>
-
-    
-
-    <!-- My Work -->
-    <section class="my-work" id="work">
-        <h2 class="section__title section__title--work">My Projects</h2>
-        <p class="section__subtitle section__subtitle--work"> Personal projects that I have done</p>
-
-        <div class="portfolio">
-            <!-- Portfolio items -->
-            <a href="./portfolio-item.html" class="portfolio__item">
-                <img src="./img/portfolio1.PNG" alt="The Year 2020: The Game by Patrick Celedio" class="portfolio__img">
-            </a>
-
-            <a href="./portfolio-item2.html" class="portfolio__item">
-                <img src="./img/n0tr3dd1t/Capture1.PNG" alt="Showing off my web app project, `n0tr3dd1t` "
-                    class="portfolio__img">
-            </a>
-
-            <a href="./portfolio-item3.html" class="portfolio__item">
-                <img src="./img/chanceoperations/chance-operation-two.png" alt="" class="portfolio__img">
-            </a>
-
-            <a href="#" class="portfolio__item">
-                <img src="portfolio-n" alt="" class="portfolio__img">
-            </a>
-        </div>
-    </section>
+    </div>
 
     <!-- Footer -->
-    <footer class="footer" id="id_footer">
+    <footer class="footer">
         <p>© Patrick Celedio, 2021</p>
         <p>patrickceledio@gmail.com</p>
         <ul class="social-list">

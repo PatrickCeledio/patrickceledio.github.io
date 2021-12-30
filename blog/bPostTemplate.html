@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PJC: ASCII Table Reference</title>
+    <title>PJC Blog</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" />
@@ -16,7 +16,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Mono:wght@500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./../public/css/main.css">
-    <link rel="icon" href="./../img/bloglogo.png">
 </head>
 
 <body>
@@ -34,7 +33,6 @@
                 <li class="nav__item"><a href="./../index.html#services" class="nav__link">My Services</a></li>
                 <li class="nav__item"><a href="./../aboutme.html" class="nav__link">About Me</a></li>
                 <li class="nav__item"><a href="./../index.html#work" class="nav__link">My Work</a></li>
-                <li class="nav__item"><a href="./../blog/bHome.html" class="nav__link">Blog</a></li>
                 <li class="nav__item"><a href="./../myresume.html" class="nav__link">My Resume</a></li>
                 <li class="nav__item"><a href="./../index.html#id_footer" class="nav__link">Contact Me</a></li>
             </ul>
@@ -44,24 +42,37 @@
     <!-- Introduction: class for styling, id for anchoring -->
     <section class="intro" id="home">
         <h1 class="section__title section__title--intro">
-            ASCII Table <strong> Reference </strong>
+            Computing the sum of <strong> two integers (C++) </strong>
         </h1>
         <p class="section__subtitle section__subtitle--intro">By Patrick Celedio</p>
         <img src="./../img/bloglogo.png" alt="Blog Logo Image" class="intro__img">
     </section>
-
-    <!-- Body: add and edit content here!-->    
+        
+    <!-- EDIT BODY CODE HERE-->
     <div class="portfolio-item-individual">
         <section>
-            <h2>
-                Ascii Table
-            </h2>
-            <img src="./../img/blogpics/asciitable/asciifull.gif" alt="1">
-            <h2> Extended ASCII Codes </h2>
-            <img src="./../img/blogpics/asciitable/extend.gif" alt="2">
-            <p>Thank you, <a href="http://www.LookupTables.com">LookupTables</a> for providing these images. </p>
+            <p>
+                In order to write a function that computes the sum of two integers, all we need are three 
+                    <span style="color:#4048c4;" class="has-inline-color">int </span>
+                    variables: two that store each addend, and one that will be used to store the sum. 
+                    <br><br>A very simple program, one may write this up:
+            </p>
+            <img src="./../img/computingsumoftwoint/1.png" alt="1">
+            <img src="./../img/computingsumoftwoint/2.png" alt="2">
+
+            <p>
+                Which will definitely work. 
+                However, we can omit the line containing ‘c=a+b’ as we are allowed to return formulas or equations.
+            </p>
+            <img src="./../img/computingsumoftwoint/3.png" alt="3">
+            <img src="./../img/computingsumoftwoint/4.png" alt="4">
+            <p>
+                From here, we save a line of code for 
+                a function that is already so simple.
+            </p>
         </section>
     </div>
+    <!-- END BODY CODE -->
 
     <!-- Footer -->
     <footer class="footer">
