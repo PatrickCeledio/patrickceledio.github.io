@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PJC Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Mono:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./../public/css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="add new logo" alt="" class="index-logo">
+        </div>
+
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="./../index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="./../index.html#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="./../aboutme.html" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="./../index.html#work" class="nav__link">My Work</a></li>
+                <li class="nav__item"><a href="./../blog/bHome.html" class="nav__link">Blog</a></li>
+                <li class="nav__item"><a href="./../myresume.html" class="nav__link">My Resume</a></li>
+                <li class="nav__item"><a href="./../index.html#id_footer" class="nav__link">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction: class for styling, id for anchoring -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Computing the sum of <strong> two integers (C++) </strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">By Patrick Celedio</p>
+        <img src="./../img/bloglogo.png" alt="Blog Logo Image" class="intro__img">
+    </section>
+        
+    <!-- EDIT BODY CODE HERE-->
+    <div class="portfolio-item-individual">
+        <section>
+            <p>
+                In order to write a function that computes the sum of two integers, all we need are three 
+                    <span style="color:#4048c4;" class="has-inline-color">int </span>
+                    variables: two that store each addend, and one that will be used to store the sum. 
+                    <br><br>A very simple program, one may write this up:
+            </p>
+            <img src="./../img/computingsumoftwoint/1.png" alt="1">
+            <img src="./../img/computingsumoftwoint/2.png" alt="2">
+
+            <p>
+                Which will definitely work. 
+                However, we can omit the line containing ‘c=a+b’ as we are allowed to return formulas or equations.
+            </p>
+            <img src="./../img/computingsumoftwoint/3.png" alt="3">
+            <img src="./../img/computingsumoftwoint/4.png" alt="4">
+            <p>
+                From here, we save a line of code for 
+                a function that is already so simple.
+            </p>
+        </section>
+    </div>
+    <!-- END BODY CODE -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© Patrick Celedio, 2022</p>
+        <p>patrickceledio@gmail.com</p>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a href="https://github.com/PatrickCeledio" class="social-list__link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://twitter.com/patrickceledio" class="social-list__link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.linkedin.com/in/patrickceledio" class="social-list__link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.instagram.com/patrickceledio_/" class="social-list__link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+
+            <li class="social-list__item">
+                <a href="https://iampjc.com/blog/bHome.html" class="social-list__link">
+                    <i class="fab fa-wordpress"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="./../public/js/index.js"></script>
+
+</body>
+
+</html>
