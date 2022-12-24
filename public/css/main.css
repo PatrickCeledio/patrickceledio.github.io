@@ -12,9 +12,9 @@
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #e07816;
+    --clr-light: rgb(107, 107, 107);
+    --clr-dark: #202020;
+    --clr-accent: #007de4;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
