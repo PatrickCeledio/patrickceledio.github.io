@@ -6,15 +6,15 @@
 
 /* Custom Properties */
 :root{
-    --ff-primary: 'Roboto Mono', monospace;
-    --ff-secondary: 'Poppins', sans-serif;
+    --ff-primary: 'JetBrains Mono', monospace;
+    --ff-secondary: 'Fira Code', sans-serif;
 
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --clr-light: rgb(107, 107, 107);
-    --clr-dark: #202020;
-    --clr-accent: #007de4;
+    --clr-light: rgb(0, 0, 0);
+    --clr-dark: #00cd11;
+    --clr-accent: #111111d8;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -23,6 +23,12 @@
 
     --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25), 
           0.125em 0.125em 0.25em rgba(0, 0, 0, .15); 
+
+    --bg: #0f1115;
+    --card: #171a21;
+    --accent: #ff6600;
+    --text: #f5f5f5;
+    --muted: #9ca3af;
 }
 
 @media (min-width: 800px){
@@ -124,7 +130,6 @@ h3 { font-size: var(--fs-h3) }
     background: var(--clr-accent);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
-    margin-bottom: 1em;
 }
 
 .section__subtitle--work {
@@ -293,8 +298,8 @@ header {
 .my-services {
     background-color: var(--clr-dark);
     background-image: url("../../img/services-bg3.jpg");
-    background-size: cover;
-    background-blend-mode: multiply;
+    /* background-size: cover;
+    background-blend-mode: multiply; */
     color: var(--clr-light);
     text-align: center;
 }
@@ -403,7 +408,7 @@ header {
 
 .portfolio {
     display: grid; 
-    grid-template-columns: repeat(auto-fit, mixmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, mixmax(10px, 1fr));
 }
 
 .portfolio__item{
@@ -432,8 +437,7 @@ header {
 /* Footer */
 
 .footer {
-    background: #111;
-    color: var(--clr-accent);
+    background: #000000;
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
@@ -441,7 +445,7 @@ header {
 }
 
 .footer a {
-    color: inherit;
+    color: white;
     text-decoration: none;
 }
 
@@ -509,4 +513,15 @@ header {
     object-fit: contain;
     width: 100%;
     height: 100%;
+}
+
+/* Scramble */
+#scramble {
+  display: inline-block;
+}
+
+#scramble.scrambling {
+  text-shadow:
+    1px 0 rgba(0, 255, 255, 0.45),
+   -1px 0 rgba(255, 0, 80, 0.45);
 }

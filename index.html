@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I Am PJC</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" />
@@ -44,17 +45,17 @@
     <!-- Introduction: class for styling, id for anchoring -->
     <section class="intro" id="home">
         <h1 class="section__title section__title--intro">
-            Hi, I am <strong>Patrick J. Celedio</strong>
+            Sup it's <strong>Patrick Celedio</strong>
         </h1>
         <p class="section__subtitle section__subtitle--intro">
             <span id="scramble">Computer Network Engineer</span>
         </p>
-        <img src="./img/main_picture.jpg" alt="picture of myself" class="intro__img">
+        <!-- <img src="./img/main_picture.jpg" alt="picture of myself" class="intro__img"> -->
     </section>
 
     <!-- My Services -->
     <section class="my-services" id="services">
-        <h2 class="section__title section__title--services">What I do</h2>
+        <h2 class="section__title section__title--services">My Skills</h2>
         <div class="services">
             <div class="service">
                 <h3>Network Engineering</h3>
@@ -78,8 +79,8 @@
 
     <!-- My Work -->
     <section class="my-work" id="work">
-        <h2 class="section__title section__title--work">My Projects</h2>
-        <p class="section__subtitle section__subtitle--work"> Personal projects that I have done</p>
+        <h2 class="section__title section__title--work">University Projects</h2>
+        <p class="section__subtitle section__subtitle--work"> Projects that I have done while enrolled at SFSU</p>
 
         <div class="portfolio">
             <!-- Portfolio items -->
@@ -109,8 +110,7 @@
 
     <!-- Footer -->
     <footer class="footer" id="id_footer">
-        <p>© Patrick Celedio, 2023</p>
-        <p>patrickceledio@gmail.com</p>
+        <p>© 2026</p>
         <ul class="social-list">
             <li class="social-list__item">
                 <a href="https://github.com/PatrickCeledio" class="social-list__link">
@@ -122,11 +122,6 @@
                     <i class="fab fa-linkedin"></i>
                 </a>
             </li>
-            <li class="social-list__item">
-                <a href="./blog/bHome.html" class="social-list__link">
-                    <i class="fab fa-wordpress"></i>
-                </a>
-            </li>
         </ul>
     </footer>
 
@@ -135,9 +130,8 @@
     <script>
         const slogans = [
             "SFSU Computer Science Graduate",
-            "My first computer was installed with Windows ME",
-            "No outages please",
-            "404 Not Found",
+            "Occasional Game Developer",
+            "I enjoy building random things",
         ];
 
         const chars = "abcdefghijklmnopqrstuvwxyz0123456789-_/\\|:;.,!?@#$%&*+=<>[]{}";
@@ -195,9 +189,22 @@
             }, 28);
         }
 
+        let lastIndex = -1;
+
+        function getNextIndex() {
+        let nextIndex;
+
+        do {
+            nextIndex = Math.floor(Math.random() * slogans.length);
+        } while (nextIndex === lastIndex);
+
+        lastIndex = nextIndex;
+        return nextIndex;
+        }
+
         setInterval(() => {
-            sloganIndex = (sloganIndex + 1) % slogans.length;
-            scrambleTo(slogans[sloganIndex]);
+        const next = getNextIndex();
+        scrambleTo(slogans[next]);
         }, 3100);
     </script>
 </body>
