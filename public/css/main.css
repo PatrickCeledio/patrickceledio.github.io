@@ -109,15 +109,13 @@ h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
 
 .section__title {
+    line-height: 1;
     margin-bottom: .25em;
+
 }
 
 .section__title--intro{
-    font-weight: var( --fw-reg );
-}
-
-.section__title--intro strong {
-    display: inline;
+    font-weight: 900
 }
 
 .section__subtitle {
